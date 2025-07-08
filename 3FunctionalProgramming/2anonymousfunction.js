@@ -35,3 +35,9 @@ console.log(typeof anonymousFunction);
 // namedFunction();  // it will give me an error as function not defined;
 //                         //namedFunction is an local function
 
+
+const named = function(x,y){
+    return x*y;
+}
+const result=named(2,3);
+console.log(result);
