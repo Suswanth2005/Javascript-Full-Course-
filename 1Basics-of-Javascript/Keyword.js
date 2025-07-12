@@ -41,3 +41,62 @@ console.log(longMessage.indexOf("t",6))
 
 console.log(index2);
 
+
+//subString
+
+let name1 = "abhjeet singh";
+let output = name1.substring(0,7); 
+//substring(startIndex, endIndex) method returns the part of the string between the specified start and end indexes
+
+console.log(output);
+
+
+//trim()
+
+//trim() method removes whitespace from both ends of a string
+let name2 ="                 Hello abhjeet singh              ";
+
+console.log(name2);
+
+console.log(name2.substring(0,6)); //  it will print starting 0-->6 which is space
+
+console.log(name2.trim());
+
+console.log(name2.trim().substring(0,6)); //it will print starting 0-->6 which is "Hello" without space
+
+
+let message4 = "Find the charcater";
+let search = "find";
+if(message4.toLowerCase().includes(search)){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+
+//using function
+
+let display = (message1,search1)=> message1.includes(search1) ? true : false;
+
+console.log(display("find the character","charcter"));
+
+
+//lets find vowels
+
+let sentence = "find the Vowels ";
+let vowel="aeiou";
+
+let function1 = (sentence,vowel)=>{
+    for(let char of sentence){
+        if(vowel.toLowerCase().includes(char.toLowerCase())){
+        return "vowels are present in this string";
+    }
+     
+    }
+    return "vowels are not present in this string";
+}
+
+
+let output4 = function1(sentence,vowels);
+console.log(output4);
+
