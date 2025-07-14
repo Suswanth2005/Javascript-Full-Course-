@@ -12,9 +12,22 @@ console.log(character); //prints the character at index 8
 let names = "jonathan";
 console.log(names.charCodeAt(1));  //it will print the unicode value of the character at index 1
 
-for(let i=0;i<names.length;i++){
+for(let i=0;i<names.length;i++){     //here name variable is string so we use charCodeAt()(method used only for strings not for numbers)
+                                     //for numbers we use String.fromCharCode() method refrer below
     console.log(names.charCodeAt(i));
 }
+
+//String.fromCharCode() method returns a string created by using the specified sequence of UTF-16 code units.
+
+for(let i=97;i<=122;i++){
+    console.log(String.fromCharCode(i));
+}
+for(let i=65;i<=90;i++){
+    console.log(String.fromCharCode(i));
+}
+
+
+
 
 
 //includes() method checks if a string contains a specific character or substring.
@@ -99,4 +112,7 @@ let function1 = (sentence,vowel)=>{
 
 let output4 = function1(sentence,vowels);
 console.log(output4);
+
+
+
 

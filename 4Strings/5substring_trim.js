@@ -19,3 +19,5 @@ console.log(name2.substring(0,6)); //  it will print starting 0-->6 which is spa
 console.log(name2.trim());
 
 console.log(name2.trim().substring(0,6)); //it will print starting 0-->6 which is "Hello" without space
+
+
