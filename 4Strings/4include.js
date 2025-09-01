@@ -32,3 +32,9 @@ let function1 = (sentence,vowels)=>{
 
 let output = function1(sentence,vowels);
 console.log(output);
+
+
+let find = "find";
+let search1 ="Find";
+
+console.log(find.includes(search1));  // prints false because . includes is case sensitive
